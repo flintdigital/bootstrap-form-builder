@@ -1,18 +1,23 @@
 define([
-       'jquery', 'underscore', 'backbone'
-       , "text!templates/app/tab-nav.html"
+  'backbone',
+  'text!templates/app/tab-nav.html'
+],
 
-], function($, _, Backbone,
-           _tabNavTemplate){
+function (Backbone, _tabNavTemplate) {
+
   return Backbone.View.extend({
-    tagName: "div"
-    , className: "tab-pane"
-    , initialize: function() {
+    tagName: 'div',
+
+    className: 'tab-pane',
+
+    initialize: function (options) {
+      this.options = options || {};
       this.id = this.options.title.toLowerCase().replace(/\W/g,'');
       this.tabNavTemplate = _.template(_tabNavTemplate);
       this.render();
-    }
-    , render: function(){
+    },
+
+    render: function () {
       // Render Snippet Views
       var that = this;
       if (that.collection !== undefined) {
