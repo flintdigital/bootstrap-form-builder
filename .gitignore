@@ -1,1 +1,16 @@
+# Ignore OS generated files
+ehthumbs.db
+Thumbs.db
 .DS_Store
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Debug directory
+debug/
