@@ -1,28 +1,31 @@
 require.config({
-  baseUrl: "assets/js/lib/"
-  , shim: {
-    'backbone': {
+  baseUrl: '/assets/js',
+
+  paths: {
+    jquery:       '../../bower_components/jquery/dist/jquery',
+    underscore:   '../../bower_components/underscore/underscore',
+    text:         '../../bower_components/text/text',
+    backbone:     '../../bower_components/backbone/backbone',
+    bootstrap:    '../../bower_components/bootstrap/dist/js/bootstrap'
+  },
+
+  shim: {
+    backbone: {
       deps: ['underscore', 'jquery'],
       exports: 'Backbone'
     },
-    'underscore': {
-      exports: '_'
-    },
-    'bootstrap': {
+
+    bootstrap: {
       deps: ['jquery'],
       exports: '$.fn.popover'
     }
   }
-  , paths: {
-    app         : ".."
-    , collections : "../collections"
-    , data        : "../data"
-    , models      : "../models"
-    , helper      : "../helper"
-    , templates   : "../templates"
-    , views       : "../views"
-  }
 });
-require([ 'app/app'], function(app){
+
+require([
+  'app'
+],
+
+function (app) {
   app.initialize();
 });
