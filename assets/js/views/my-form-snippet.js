@@ -88,16 +88,17 @@ function(Backbone, SnippetView, TempSnippetView, PubSub) {
               break;
           }
         });
-        boundContext.model.trigger('change');
+        boundContext.model.trigger('change', boundContext.model);
         $('.popover').remove();
       }
     },
 
     cancelHandler: function (boundContext) {
+
       return function (mouseEvent) {
         mouseEvent.preventDefault();
         $('.popover').remove();
-        boundContext.model.trigger('change');
+        boundContext.model.trigger('change', boundContext.model);
       };
     }
   });
