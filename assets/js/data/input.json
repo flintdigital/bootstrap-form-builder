@@ -1,16 +1,16 @@
 [
   {
-    "title": "Text Input",
+    "title": "Input",
     "fields": {
       "id": {
         "label": "ID / Name",
         "type": "input",
-        "value": "textinput"
+        "value": "input"
       },
       "label": {
-        "label": "Label Text",
+        "label": "Label",
         "type": "input",
-        "value": "Text Input"
+        "value": "text input"
       },
       "placeholder": {
         "label": "Placeholder",
@@ -27,170 +27,59 @@
         "type": "checkbox",
         "value": false
       },
-      "inputsize": {
+      "readonly": {
+        "label": "Read only",
+        "type": "checkbox",
+        "value": false
+      },
+      "size": {
         "label": "Input Size",
         "type": "select",
         "value": [
           {
-            "value": "input-mini",
-            "label": "Mini",
-            "selected": false
-          },
-          {
-            "value": "input-small",
+            "value": "input-sm",
             "label": "Small",
             "selected": false
           },
           {
-            "value": "input-medium",
-            "label": "Medium",
-            "selected": false
-          },
-          {
-            "value": "input-large",
-            "label": "Large",
-            "selected": false
-          },
-          {
-            "value": "input-xlarge",
-            "label": "Xlarge",
+            "value": "",
+            "label": "Default",
             "selected": true
           },
           {
-            "value": "input-xxlarge",
-            "label": "Xxlarge",
+            "value": "input-lg",
+            "label": "Large",
             "selected": false
           }
         ]
-      }
-    }
-  },
-  {
-    "title": "Password Input",
-    "fields": {
-      "id": {
-        "label": "ID / Name",
-        "type": "input",
-        "value": "passwordinput"
       },
-      "label": {
-        "label": "Label Text",
-        "type": "input",
-        "value": "Password Input"
-      },
-      "placeholder": {
-        "label": "Placeholder",
-        "type": "input",
-        "value": "placeholder"
-      },
-      "helptext": {
-        "label": "Help Text",
-        "type": "input",
-        "value": "help"
-      },
-      "required": {
-        "label": "Required",
-        "type": "checkbox",
-        "value": false
-      },
-      "inputsize": {
-        "label": "Input Size",
+      "type": {
+        "label": "Input Type",
         "type": "select",
         "value": [
           {
-            "value": "input-mini",
-            "label": "Mini",
-            "selected": false
-          },
-          {
-            "value": "input-small",
-            "label": "Small",
-            "selected": false
-          },
-          {
-            "value": "input-medium",
-            "label": "Medium",
-            "selected": false
-          },
-          {
-            "value": "input-large",
-            "label": "Large",
-            "selected": false
-          },
-          {
-            "value": "input-xlarge",
-            "label": "Xlarge",
+            "value": "text",
+            "label": "Text",
             "selected": true
           },
           {
-            "value": "input-xxlarge",
-            "label": "Xxlarge",
-            "selected": false
-          }
-        ]
-      }
-    }
-  },
-  {
-    "title": "Search Input",
-    "fields": {
-      "id": {
-        "label": "ID / Name",
-        "type": "input",
-        "value": "searchinput"
-      },
-      "label": {
-        "label": "Label Text",
-        "type": "input",
-        "value": "Search Input"
-      },
-      "placeholder": {
-        "label": "Placeholder",
-        "type": "input",
-        "value": "placeholder"
-      },
-      "helptext": {
-        "label": "Help Text",
-        "type": "input",
-        "value": "help"
-      },
-      "required": {
-        "label": "Required",
-        "type": "checkbox",
-        "value": false
-      },
-      "inputsize": {
-        "label": "Input Size",
-        "type": "select",
-        "value": [
-          {
-            "value": "input-mini",
-            "label": "Mini",
+            "value": "email",
+            "label": "Email",
             "selected": false
           },
           {
-            "value": "input-small",
-            "label": "Small",
+            "value": "password",
+            "label": "Password",
             "selected": false
           },
           {
-            "value": "input-medium",
-            "label": "Medium",
+            "value": "search",
+            "label": "Search",
             "selected": false
           },
           {
-            "value": "input-large",
-            "label": "Large",
-            "selected": false
-          },
-          {
-            "value": "input-xlarge",
-            "label": "Xlarge",
-            "selected": true
-          },
-          {
-            "value": "input-xxlarge",
-            "label": "Xxlarge",
+            "value": "date",
+            "label": "Date",
             "selected": false
           }
         ]

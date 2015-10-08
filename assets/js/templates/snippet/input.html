@@ -1,0 +1,16 @@
+<!-- Input-->
+<div class="form-group">
+  <label for="<%= id %>" class="col-xs-3 control-label"><%= label %></label>
+  <div class="col-xs-9">
+    <input type="<%= type %>"
+      class="form-control <%= size %>"
+      id="<%= id %>"
+      name="<%= id %>"
+      placeholder="<%= placeholder %>"
+      <% if (required) { %> required <% } %>
+      <% if (readonly) { %> readonly <% } %>>
+    <% if (helptext.length > 0) { %>
+    <span class="help-block"><%= helptext %></span>
+    <% } %>
+  </div>
+</div>

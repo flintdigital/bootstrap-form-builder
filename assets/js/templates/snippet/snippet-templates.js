@@ -1,8 +1,9 @@
 define(function(require) {
-  var formname               = require('text!templates/snippet/formname.html')
+  var input                = require('text!templates/snippet/input.html')
+  , formname               = require('text!templates/snippet/formname.html')
   , prependedtext            = require('text!templates/snippet/prependedtext.html')
   , search                   = require('text!templates/snippet/searchinput.html')
-  , textinput                = require('text!templates/snippet/textinput.html')
+
   , appendedcheckbox         = require('text!templates/snippet/appendedcheckbox.html')
   , appendedtext             = require('text!templates/snippet/appendedtext.html')
   , filebutton               = require('text!templates/snippet/filebutton.html')
@@ -20,13 +21,13 @@ define(function(require) {
   , selectbasic              = require('text!templates/snippet/selectbasic.html')
   , selectmultiple           = require('text!templates/snippet/selectmultiple.html')
   , textarea                 = require('text!templates/snippet/textarea.html')
-  , textinput                = require('text!templates/snippet/textinput.html');
 
   return {
+    input                : input,
     formname                   : formname
     , prependedtext            : prependedtext
     , search                   : search
-    , textinput                : textinput
+
     , appendedcheckbox         : appendedcheckbox
     , appendedtext             : appendedtext
     , filebutton               : filebutton
@@ -44,6 +45,5 @@ define(function(require) {
     , selectbasic              : selectbasic
     , selectmultiple           : selectmultiple
     , textarea                 : textarea
-    , textinput                : textinput
   }
 });
