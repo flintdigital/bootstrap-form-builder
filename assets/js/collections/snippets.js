@@ -1,9 +1,10 @@
 define([
+  'backbone',
   'models/snippet',
   'views/tab-snippet'
 ],
 
-function (SnippetModel, TabSnippetView) {
+function (Backbone, SnippetModel, TabSnippetView) {
 
   return Backbone.Collection.extend({
     model: SnippetModel,

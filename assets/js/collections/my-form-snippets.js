@@ -1,10 +1,11 @@
 define([
+  'backbone',
   'models/snippet',
   'collections/snippets',
   'views/my-form-snippet'
 ],
 
-function (SnippetModel, SnippetsCollection, MyFormSnippetView) {
+function (Backbone, SnippetModel, SnippetsCollection, MyFormSnippetView) {
 
   return SnippetsCollection.extend({
     model: SnippetModel,
