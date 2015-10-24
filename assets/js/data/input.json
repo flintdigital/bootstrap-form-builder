@@ -3,7 +3,7 @@
     "title": "Input",
     "fields": {
       "id": {
-        "label": "ID / Name",
+        "label": "ID",
         "type": "input",
         "value": "input"
       },
@@ -20,7 +20,7 @@
       "helptext": {
         "label": "Help Text",
         "type": "input",
-        "value": "help"
+        "value": "Help Text (Optional)"
       },
       "required": {
         "label": "Required",
@@ -32,7 +32,7 @@
         "type": "checkbox",
         "value": false
       },
-      "size": {
+      "inputsize": {
         "label": "Input Size",
         "type": "select",
         "value": [
@@ -42,7 +42,7 @@
             "selected": false
           },
           {
-            "value": "",
+            "value": "default",
             "label": "Default",
             "selected": true
           },
@@ -90,7 +90,7 @@
     "title": "Prepended Text",
     "fields": {
       "id": {
-        "label": "ID / Name",
+        "label": "ID",
         "type": "input",
         "value": "prependedtext"
       },
@@ -112,7 +112,7 @@
       "helptext": {
         "label": "Help Text",
         "type": "input",
-        "value": "help"
+        "value": "Help Text (Optional)"
       },
       "required": {
         "label": "Required",
@@ -124,33 +124,18 @@
         "type": "select",
         "value": [
           {
-            "value": "input-mini",
-            "label": "Mini",
-            "selected": false
-          },
-          {
-            "value": "input-small",
+            "value": "input-sm",
             "label": "Small",
             "selected": false
           },
           {
-            "value": "input-medium",
-            "label": "Medium",
-            "selected": false
-          },
-          {
-            "value": "input-large",
-            "label": "Large",
-            "selected": false
-          },
-          {
-            "value": "input-xlarge",
-            "label": "Xlarge",
+            "value": "default",
+            "label": "Default",
             "selected": true
           },
           {
-            "value": "input-xxlarge",
-            "label": "Xxlarge",
+            "value": "input-lg",
+            "label": "Large",
             "selected": false
           }
         ]
@@ -161,7 +146,7 @@
     "title": "Appended Text",
     "fields": {
       "id": {
-        "label": "ID / Name",
+        "label": "ID",
         "type": "input",
         "value": "appendedtext"
       },
@@ -183,7 +168,7 @@
       "helptext": {
         "label": "Help Text",
         "type": "input",
-        "value": "help"
+        "value": "Help Text (Optional)"
       },
       "required": {
         "label": "Required",
@@ -195,33 +180,18 @@
         "type": "select",
         "value": [
           {
-            "value": "input-mini",
-            "label": "Mini",
-            "selected": false
-          },
-          {
-            "value": "input-small",
+            "value": "input-sm",
             "label": "Small",
             "selected": false
           },
           {
-            "value": "input-medium",
-            "label": "Medium",
-            "selected": false
-          },
-          {
-            "value": "input-large",
-            "label": "Large",
-            "selected": false
-          },
-          {
-            "value": "input-xlarge",
-            "label": "Xlarge",
+            "value": "default",
+            "label": "Default",
             "selected": true
           },
           {
-            "value": "input-xxlarge",
-            "label": "Xxlarge",
+            "value": "input-lg",
+            "label": "Large",
             "selected": false
           }
         ]
@@ -232,7 +202,7 @@
     "title": "Prepended Checkbox",
     "fields": {
       "id": {
-        "label": "ID / Name",
+        "label": "ID",
         "type": "input",
         "value": "prependedcheckbox"
       },
@@ -249,7 +219,7 @@
       "helptext": {
         "label": "Help Text",
         "type": "input",
-        "value": "help"
+        "value": "Help Text (Optional)"
       },
       "checked": {
         "label": "Checked",
@@ -266,33 +236,18 @@
         "type": "select",
         "value": [
           {
-            "value": "input-mini",
-            "label": "Mini",
-            "selected": false
-          },
-          {
-            "value": "input-small",
+            "value": "input-sm",
             "label": "Small",
             "selected": false
           },
           {
-            "value": "input-medium",
-            "label": "Medium",
-            "selected": false
-          },
-          {
-            "value": "input-large",
-            "label": "Large",
-            "selected": false
-          },
-          {
-            "value": "input-xlarge",
-            "label": "Xlarge",
+            "value": "default",
+            "label": "Default",
             "selected": true
           },
           {
-            "value": "input-xxlarge",
-            "label": "Xxlarge",
+            "value": "input-lg",
+            "label": "Large",
             "selected": false
           }
         ]
@@ -303,7 +258,7 @@
     "title": "Appended Checkbox",
     "fields": {
       "id": {
-        "label": "ID / Name",
+        "label": "ID",
         "type": "input",
         "value": "appendedcheckbox"
       },
@@ -320,7 +275,7 @@
       "helptext": {
         "label": "Help Text",
         "type": "input",
-        "value": "help"
+        "value": "Help Text (Optional)"
       },
       "checked": {
         "label": "Checked",
@@ -337,33 +292,18 @@
         "type": "select",
         "value": [
           {
-            "value": "input-mini",
-            "label": "Mini",
-            "selected": false
-          },
-          {
-            "value": "input-small",
+            "value": "input-sm",
             "label": "Small",
             "selected": false
           },
           {
-            "value": "input-medium",
-            "label": "Medium",
-            "selected": false
-          },
-          {
-            "value": "input-large",
-            "label": "Large",
-            "selected": false
-          },
-          {
-            "value": "input-xlarge",
-            "label": "Xlarge",
+            "value": "default",
+            "label": "Default",
             "selected": true
           },
           {
-            "value": "input-xxlarge",
-            "label": "Xxlarge",
+            "value": "input-lg",
+            "label": "Large",
             "selected": false
           }
         ]
@@ -374,7 +314,7 @@
     "title": "Text Area",
     "fields": {
       "id": {
-        "label": "ID / Name",
+        "label": "ID",
         "type": "input",
         "value": "textarea"
       },

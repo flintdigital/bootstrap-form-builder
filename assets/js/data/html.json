@@ -1,0 +1,17 @@
+[
+  {
+    "title": "HTML",
+    "fields": {
+        "id": {
+        "label": "ID",
+        "type": "input",
+        "value": "input"
+      },
+       "html": {
+        "label": "HTML",
+        "type": "textarea",
+        "value": "default text"
+      }
+    }
+  }
+]

@@ -3,7 +3,7 @@
     "title": "Multiple Radios",
     "fields": {
       "id": {
-        "label": "ID / Name",
+        "label": "ID",
         "type": "input",
         "value": "multipleradios"
       },
@@ -31,7 +31,7 @@
     "title": "Multiple Radios Inline",
     "fields": {
       "id": {
-        "label": "ID / Name",
+        "label": "ID",
         "type": "input",
         "value": "multipleradiosinline"
       },
@@ -61,7 +61,7 @@
     "title": "Multiple Checkboxes",
     "fields": {
       "id": {
-        "label": "ID / Name",
+        "label": "ID",
         "type": "input",
         "value": "multiplecheckboxes"
       },
@@ -89,7 +89,7 @@
     "title": "Multiple Checkboxes Inline",
     "fields": {
       "id": {
-        "label": "ID / Name",
+        "label": "ID",
         "type": "input",
         "value": "multiplecheckboxesinline"
       },

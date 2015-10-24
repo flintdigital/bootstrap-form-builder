@@ -23,7 +23,8 @@ require.config({
 });
 
 require([
-  'app'
+  'app',
+  'ace/noconflict/ace'
 ],
 
 function (app) {

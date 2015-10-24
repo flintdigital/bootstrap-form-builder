@@ -16,7 +16,7 @@ function (Backbone) {
         } else {
           o[k]  = v['value'];
         }
-
+//console.log(o);
         return o;
       }, {});
     },

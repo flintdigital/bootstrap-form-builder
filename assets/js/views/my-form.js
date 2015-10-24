@@ -3,6 +3,7 @@ define([
   'views/temp-snippet',
   'helper/pubsub',
   'text!templates/app/renderform.html'
+
 ],
 
 function (Backbone, TempSnippetView, PubSub, _renderForm) {
@@ -34,6 +35,8 @@ function (Backbone, TempSnippetView, PubSub, _renderForm) {
 
       _.each(self.collection.renderAll(), function (snippet) {
         self.$el.append(snippet);
+
+
       });
 
       $('#render').val(self.renderForm({

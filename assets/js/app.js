@@ -12,8 +12,10 @@ define([
   'text!data/input.json',
   'text!data/radio.json',
   'text!data/select.json',
+  'text!data/html.json',
   'text!data/buttons.json',
   'text!templates/app/render.html',
+  'text!templates/app/preview.html',
   'text!templates/app/about.html'
 ],
 
@@ -21,7 +23,7 @@ function (
   $, _, Backbone,
   SnippetsCollection, MyFormSnippetsCollection,
   TabView, MyFormView,
-  inputJSON, radioJSON, selectJSON, buttonsJSON, renderTab, aboutTab
+  inputJSON, radioJSON, selectJSON, htmlJSON, buttonsJSON, renderTab, previewTab, aboutTab
 ) {
 
   return {
@@ -33,12 +35,12 @@ function (
         collection: new SnippetsCollection(JSON.parse(inputJSON))
       });
       new TabView({
-        title: 'Radios / Checkboxes',
-        collection: new SnippetsCollection(JSON.parse(radioJSON))
+        title: 'Selectors',
+        collection: new SnippetsCollection($.extend(JSON.parse(radioJSON), JSON.parse(selectJSON)))
       });
       new TabView({
-        title: 'Select',
-        collection: new SnippetsCollection(JSON.parse(selectJSON))
+        title: 'HTML',
+        collection: new SnippetsCollection(JSON.parse(htmlJSON))
       });
       new TabView({
         title: 'Buttons',
@@ -47,6 +49,10 @@ function (
       new TabView({
         title: 'Rendered',
         content: renderTab
+      });
+      new TabView({
+        title: 'Preview',
+        content: previewTab
       });
       new TabView({
         title: 'About',
@@ -66,6 +72,11 @@ function (
               label: 'Form Name',
               type:  'input',
               value: 'Form Name'
+            },
+            instructions: {
+              label: 'Form Instructions',
+              type:  'textarea',
+              value: 'Instructions'
             }
           }
         }])

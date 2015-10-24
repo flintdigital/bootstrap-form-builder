@@ -3,7 +3,7 @@ define(function(require) {
   , formname               = require('text!templates/snippet/formname.html')
   , prependedtext            = require('text!templates/snippet/prependedtext.html')
   , search                   = require('text!templates/snippet/searchinput.html')
-
+  , html                     = require('text!templates/snippet/html.html')
   , appendedcheckbox         = require('text!templates/snippet/appendedcheckbox.html')
   , appendedtext             = require('text!templates/snippet/appendedtext.html')
   , filebutton               = require('text!templates/snippet/filebutton.html')
@@ -26,7 +26,7 @@ define(function(require) {
     formname                   : formname
     , prependedtext            : prependedtext
     , search                   : search
-
+    , html                     : html
     , appendedcheckbox         : appendedcheckbox
     , appendedtext             : appendedtext
     , filebutton               : filebutton

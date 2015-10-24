@@ -30,7 +30,7 @@ input {
 }
 
 textarea {
-  resize: vertical;
+  
 }
 
 .popover {
@@ -54,9 +54,13 @@ textarea {
   overflow-x: hidden;
   left: 0;
 }
+.form-group{
+padding: 20px;
+border: 1px dotted #ccc;
 
+}
 .temp form {
-  padding: 8px 4px;
+  padding: 20px;
   border: 1px dotted #ccc;
   position: absolute;
   background: white;

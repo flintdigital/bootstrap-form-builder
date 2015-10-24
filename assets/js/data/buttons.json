@@ -3,7 +3,7 @@
     "title": "File Button",
     "fields": {
       "id": {
-        "label": "ID / Name",
+        "label": "ID",
         "type": "input",
         "value": "filebutton"
       },
@@ -18,7 +18,7 @@
     "title": "Single Button",
     "fields": {
       "id": {
-        "label": "ID / Name",
+        "label": "ID",
         "type": "input",
         "value": "singlebutton"
       },
@@ -79,7 +79,7 @@
     "title": "Double Button",
     "fields": {
       "id": {
-        "label": "Button 1 ID / Name",
+        "label": "Button 1 ID",
         "type": "input",
         "value": "doublebutton"
       },
@@ -135,7 +135,7 @@
         ]
       },
       "id2": {
-        "label": "Button 2 ID / Name",
+        "label": "Button 2 ID",
         "type": "input",
         "value": "button2id"
       },
