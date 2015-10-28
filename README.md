@@ -1,17 +1,18 @@
 #Bootstrap Form Builder
 
-## Warning: Currently using Bootstrap `v. 2.3.1` :dolphin:  (Not Bootstrap 3 ready.)
+## Now Bootstrap 3 Ready :zap:
 
 ##What's this?
 
-A Drag-and-drop form builder for [twitter bootstrap](http://twitter.github.com/bootstrap/). 
+A Drag-and-drop form builder for [twitter bootstrap](http://getbootstrap.com/). 
 
 ##Where can I see it in action?
 
-It's hosted on github pages [here](http://minikomi.github.io/Bootstrap-Form-Builder/).
+It's hosted on the Flint Digital Site [here](http://bootform.flintdigital.net/).
 
 ###Notes
 
+* TO compile the code you will need to install Node.js, npm and bower. Once those are installed you can run `bower install` from the command line. 
 * For development & debugging change the data-main for the require script tag in `index.html` 
   to point at `assets/js/main.js`. (Look just before the closing `<body>` tag!)
 
@@ -22,12 +23,9 @@ It's hosted on github pages [here](http://minikomi.github.io/Bootstrap-Form-Buil
 
 ### Adding new form elements
 ### Note need to fix input YAML! It breaks the json!
-* In the [js/data/ folder](https://github.com/minikomi/Bootstrap-Form-Builder/tree/gh-pages/assets/js/data/) are yaml files, each of which corresponds to a tab in the form builder.
-* If you just want to add a new element you need to:
-  - describe it in one of these files
-  - Deprecated! parse the yaml to json using parse.rb in the same folder
-  - create a corresponding template in the [templates/snippet directory](https://github.com/minikomi/Bootstrap-Form-Builder/tree/gh-pages/assets/js/templates/snippet)
-  - add the template to [snippet-templates.js](https://github.com/minikomi/Bootstrap-Form-Builder/blob/gh-pages/assets/js/templates/snippet/snippet-templates.js)
-* If you want to add a new tab, you'll also need to adjust the [app.js file](https://github.com/minikomi/Bootstrap-Form-Builder/blob/gh-pages/assets/js/app.js) to make sure the tab is loaded.
+* In the [js/data/ folder]
+  - create a corresponding template in the [templates/snippet directory](https://github.com/flintdigital/bootstrap-form-builder/tree/gh-pages/assets/js/templates/snippet)
+  - add the template to [snippet-templates.js](https://github.com/flintdigital/bootstrap-form-builder/blob/gh-pages/assets/js/templates/snippet/snippet-templates.js)
+* If you want to add a new tab, you'll also need to adjust the [app.js file](https://github.com/flintdigital/bootstrap-form-builder/blob/gh-pages/assets/js/app.js) to make sure the tab is loaded.
 
 Don't forget to switch to main.js rather than main-built.js, or the changes you make before compiling with require.js won't show up!
